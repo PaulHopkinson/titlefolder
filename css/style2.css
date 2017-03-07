@@ -1,0 +1,101 @@
+*{
+	font-family:'helvetica';
+	color:#333;
+	box-sizing: border-box;
+}
+
+#mainContent{
+	width:960px;
+	margin:0px auto;
+	background-color: #DDDBF1;
+}
+
+/* looks for divs everywhere in #mainContent */	
+#mainContent div{
+	border:1px solid #fff;
+}
+
+/* looks for divs one layer down in #mainContent - divs within those divs aren't affected */	
+#mainContent > div{
+	padding:20px;
+	width:33%;
+	display:block;
+	float:left;
+}
+
+/*
+#mainContent:after {
+	content: '';
+	display: block;
+	clear:both;
+}
+*/
+
+.firstpara {
+	color: #3C4F76;
+}
+
+td{
+	font-weight:bold;
+}
+
+td[rowspan="2"]{
+	background-color:#D1BEB0;
+}
+
+td[rowspan="2"] + td{
+	background-color:#D1BEB0;
+}
+
+td[rowspan="2"] ~ td{
+	padding:15px;
+}
+
+.btn, .btn:focus, .btn:visited, .btn:active {
+	display:inline-block;
+	padding:10px;
+	background-color:#383F51;
+	color:#fff;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color:#383F51;
+}
+
+#mainContent div:first-of-type{
+	background-color:#AB9F9D;
+}
+
+#mainContent div:first-child{
+	padding:40px;
+}
+
+tr{
+	background-color: #fff;
+}
+
+tr:nth-child(1){
+	background-color: #D1BEB0;
+}
+
+tr:nth-child(odd){
+	background-color: #DDDBF1;
+}
+
+#mainContent > div > div {
+	display:inline-block;
+	padding:10px!important;
+}
+
+h2 img{
+	width:40px;
+	height:30px;
+	padding-right:10px;
+	vertical-align: top;
+}
+
+nav li ul{
+	display:none;
+}
